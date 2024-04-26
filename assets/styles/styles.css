@@ -1,0 +1,51 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*Google Fonts*/
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*navbar*/
+.title-name {
+  font-size: x-large;
+  color: orange;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0 0.5rem 0 0.2rem;
+  background: none;
+}
+
+#active {
+  background-color: orange;
+  color: black;
+  border-radius: 5px;
+}
+
+#active:hover {
+  background-color: bisque;
+  color: black;
+  border-radius: 5px;
+}
+
+.navbar-nav a:hover {
+  background-color: bisque;
+  color: black;
+  border-radius: 5px;
+}
+
+/*body*/
+body {
+  background-color: bisque;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
