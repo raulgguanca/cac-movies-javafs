@@ -32,7 +32,7 @@
     <!--css-->
     <link rel="stylesheet" href="../assets/styles/styles.css" />
 
-    <title>Login</title>
+    <title>Sing up</title>
   </head>
 
   <body>
@@ -61,11 +61,15 @@
           <div class="navbar-nav ms-auto">
             <a class="nav-item nav-link" href="../index.html">Home</a>
 
-            <a class="nav-item nav-link" href="../pages/contact.html">Contact</a>
+            <a
+              class="nav-item nav-link"
+              href="../pages/contact.html"
+              >Contact</a
+            >
 
             <a class="nav-item nav-link" href="../pages/about.html">About</a>
 
-            <a class="nav-item nav-link" href="../pages/login.html" id="active">Login</a>
+            <a class="nav-item nav-link" href="../pages/login.html">Login</a>
           </div>
           </div>
         </div>
@@ -75,23 +79,26 @@
     <main>
       <!--formulary-->
       <section class="formulary">
-      <h2 class="contact-form-title special-elite-regular">Login</h2>
+      <h2 class="contact-form-title special-elite-regular">Sing up</h2>
 
         <form>
+          <input type="text" name="name" id="name" placeholder="Name" required />
+
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Lastname" required
+          />
+
           <input type="email" name="email" id="email" placeholder="Email" required />
 
           <input type="password" name="password" id="password" placeholder="Password" required />
 
-          <label for="stayConn" class="checkbox-login">
-            <input type="checkbox" name="stayConn" id="stayConn" value="stayConn">Stay connected
-          </label>
+          <input type="password" name="password" id="password" placeholder="repeat password" required />
 
-          <button type="submit">Enter</button>
+          <button type="submit">Register</button>
         </form>
-        
-        <div class="sing-up">
-          <p class="sing-up">Don't have an account? <a class="special-elite-regular" href="./singUp.html">Sing up</a></p>
-        </div>
     </main>
 
     <footer>

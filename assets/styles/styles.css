@@ -13,25 +13,48 @@
   font-style: normal;
 }
 
+/*body*/
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: bisque;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+
+header {
+  height: 10vh;
+}
+
 /*navbar*/
 .title-name {
-  font-size: x-large;
+  font-size: 2.5rem;
   color: orange;
   text-decoration: none;
+  animation-name: title;
+  animation-duration: 3s;
+}
+
+@keyframes title {
+  from {color: orange;}
+  to {color: white;}
 }
 
 .logo {
-  margin: 0 0.5rem 0 0.2rem;
-  background: none;
+  margin: 0 0.5rem 1rem;
 }
 
-#active {
+.navbar-nav {
+  margin-bottom: 1rem;
+}
+
+#active, .cardFooter .btn {
   background-color: orange;
   color: black;
   border-radius: 5px;
 }
 
-#active:hover {
+#active:hover, .cardFooter .btn:hover {
   background-color: bisque;
   color: black;
   border-radius: 5px;
@@ -43,9 +66,254 @@
   border-radius: 5px;
 }
 
-/*body*/
-body {
+/*main*/
+main {
+  height: 85vh;
+}
+
+.wellcome {
+  display: flex;
+  justify-content: center;
+  margin: 7rem 0;
+  position: relative;
+}
+
+.wellcome-text {
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+/*search*/
+.search-field input {
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+#form-search-bttn {
+  background: none;
+  border: none;
+  color: white;
+}
+
+/*cards*/
+.cards-container {
+    margin: 2rem;
+}
+
+.card {
+    width: 20rem;
+    height: 35rem;
+    margin: 0.3rem 0;
+    display: flex;
+    background: none;
+    border: none;
+    color: orange;
+    font-weight: bolder;
+}
+
+.card > img {
+    width: 100%;
+    height: 70%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: -5px -5px 5px orange;
+}
+
+.card-title, .card-body p {
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* card details */
+.card-details {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-img {
+    width: 50vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.img-details {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.card-body-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.card-body-details p {
+    height: 20%;
+}
+
+.card-text-extended {
+    height: 45%;
+}
+
+/*footer*/
+footer {
+  height: 5vh;
+  background-color: black;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.social a {
+  margin-top: 0.35rem;
+    text-decoration: none;
+    color: white;
+}
+
+.fa-facebook {
+  animation-name: an-facebook;
+  animation-duration: 3s;
+}
+
+@keyframes an-facebook {
+  from {color: white;}
+  to {color: blue;}
+}
+
+.fa-instagram {
+  animation-name: an-instagram;
+  animation-duration: 3s;
+}
+
+@keyframes an-instagram {
+  from {color: white;}
+  to {color: salmon;}
+}
+
+.fa-x-twitter {
+  animation-name: an-twitter;
+  animation-duration: 3s;
+}
+
+@keyframes an-twitter {
+  from {color: white;}
+  to {color: cyan;}
+}
+
+.fa-instagram:hover {
+    color: salmon;
+}
+
+.fa-instagram:hover {
+    color: salmon;
+}
+
+.fa-facebook:hover {
+    color:blue;
+}
+
+.fa-x-twitter:hover {
+    color: cyan;
+}
+
+/*contact page*/
+/*formulary*/
+form {
+  margin: 15px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.formulary input {
+  width: 30%;
+  height: 2rem;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+.formulary label {
+  margin-top: 2rem;
+  font-size: larger;
+}
+
+.contact-form-title {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: orange;
+}
+
+.message-label {
+  color: orange;
+}
+
+textarea {
+  width: 35%;
+  height: 8rem;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+.formulary button {  
+  margin-top: 15px;
+  width: 5rem;
+  height: 2rem;
+  font-weight: bolder;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.formulary button:hover {
   background-color: bisque;
-  background-image: url(../img/background.jpg);
-  background-size: cover;
+  color: black;
+  border-radius: 5px;
+}
+
+/*login page*/
+.checkbox-login label {
+  margin-bottom: 1rem;
+}
+
+.checkbox-login > input{
+  margin-bottom: 1rem;
+  width: 4rem;
+  color: white;
+}
+
+.sing-up {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.sing-up p {
+  color: white;
+  font-size: large;
+}
+
+.sing-up a {
+  margin-top: 0.2rem;
+  font-weight: bolder;
+  color: orange;
+  text-decoration: none;
 }
