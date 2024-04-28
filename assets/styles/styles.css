@@ -22,6 +22,9 @@ body {
   background-size: cover;
 }
 
+header {
+  height: 10vh;
+}
 /*navbar*/
 .title-name {
   font-size: 2.5rem;
@@ -324,9 +327,13 @@ textarea {
 
 /* media queries */
 @media screen and (max-width:1000px) {
+  header {
+    height: unset;
+  }
+
   .navbar-toggler {
     margin: 5px 0;
-    color: #f72585;
+    color: orange;
   }
 
   .search-form {
