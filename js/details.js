@@ -1,7 +1,5 @@
 const apikey = "c538ffb4";
 
-let cards;
-
 const querySort = location.search;
 const parameters = new URLSearchParams(querySort);
 const movieId = parameters.get("id");
