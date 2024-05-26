@@ -42,7 +42,7 @@ function createMovieDetails(movie) {
         </div>
 
         <div class="card card-body card-body-details">
-          <h2 class="card-title">${movie.Title}</h2>
+          <h2 class="card-title-details">${movie.Title}</h2>
 
           <p>Rated: ${movie.Rated}</p>
           <p>Released: ${movie.Released}</p>
@@ -53,7 +53,7 @@ function createMovieDetails(movie) {
           <p>Actors: ${movie.Actors}</p>
           <p>Awards: ${movie.Awards}</p>
 
-          <p>Overview</p>
+          <h3>Overview</h3>
 
           <p class="card-text-extended">${movie.Plot}</p>
         </div>

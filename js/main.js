@@ -57,7 +57,7 @@ function addCards(moviesCompositor) {
     for (const mov of moviesCompositor) {
       moviesCards += `
         <div class="card">
-          <img class="card-img-top" src="${mov.Poster}" alt="${mov.Title}" />
+          <a href="./pages/details.html?id=${mov.imdbID}" class="btn"><img class="card-img-top" src="${mov.Poster}" alt="${mov.Title}" /></a>
 
           <div class="card-body">
             <h5 class="card-title">${mov.Title}</h5>
@@ -75,7 +75,7 @@ function addCards(moviesCompositor) {
   } else {
     noResults.innerHTML = `
     <div class="no-results">
-      <h2>There's nothing to show here! Try another word or check your spelling</h2>
+      <h2 class="special-elite-regular">There's nothing to show here! Try another word or check your spelling</h2>
       <img src="./assets/img/error.jpg" alt="error">
     </div>
     `;
