@@ -18,7 +18,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: bisque;
-  background-image: url(../img/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background.jpg);
   background-size: cover;
 }
 
@@ -73,7 +73,7 @@ main {
 .wellcome {
   display: flex;
   justify-content: center;
-  margin: 7rem 0;
+  margin-top: 1rem;
   position: relative;
 }
 
@@ -127,26 +127,39 @@ main {
     box-shadow: -5px -5px 5px orange;
 }
 
-.card-title, .card-body p {
-  -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: black;
-}
-
 .cardFooter {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-/* card details */
+/*no results message*/
+
+.no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-results > img {
+  width: 45%;
+  opacity: 0.9;
+}
+
+.no-results > h2 {
+  font-size: x-large;
+  color: white;
+}
+
+/* card details page */
 .card-details {
-    width: 100vw;
+    width: 95vw;
     display: flex;
     justify-content: space-around;
 }
 
 .card-img {
-    width: 50vw;
+    width: 30%;
     height: 10%;
     display: flex;
     align-items: center;
@@ -154,26 +167,30 @@ main {
 
 .img-details {
     width: 90%;
-    margin-bottom: 1rem;
+}
+
+.card-title-details {
+  align-self: center;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+  font-size: xx-large;
 }
 
 .card-body-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.5rem;
 }
 
-.card-body-details p {
-    height: 20%;
+.card-body-details > h3 {
+  align-self: center;
+  font-weight: bolder;
+  margin-top: 1rem;
 }
 
-.card-text-extended {
-    height: 45%;
-}
-
-/*footer*/
 footer {
   height: 5vh;
   background-color: black;
@@ -356,7 +373,6 @@ textarea {
     width: 90%;
     height: 80%;
   }
-
 }
 
 @media screen and (max-width:800px) {
