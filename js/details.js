@@ -8,7 +8,7 @@ let filterMovie;
 
 let searchValue = movieId;
 
-let urlApiMovies = `http://www.omdbapi.com/?i=${searchValue}&apikey=${apikey}`;
+let urlApiMovies = `https://www.omdbapi.com/?i=${searchValue}&apikey=${apikey}`;
 
 async function getMovie() {
   try {

@@ -9,7 +9,7 @@ let urlApiMovies;
 
 async function getMovies() {
   if (searchValue == undefined) {
-    urlApiMovies = `http://www.omdbapi.com/?s=action&apikey=${apikey}`;
+    urlApiMovies = `https://www.omdbapi.com/?s=action&apikey=${apikey}`;
     try {
       let response = await fetch(urlApiMovies);
       let data = await response.json();
@@ -25,7 +25,7 @@ async function getMovies() {
       console.log(error);
     }
   } else {
-    urlApiMovies = `http://www.omdbapi.com/?s=${searchValue}&apikey=${apikey}`;
+    urlApiMovies = `https://www.omdbapi.com/?s=${searchValue}&apikey=${apikey}`;
     try {
       let response = await fetch(urlApiMovies);
       let data = await response.json();
