@@ -33,7 +33,7 @@ function createFavorites(moviesCompositor) {
   for (const mov of moviesCompositor) {
     moviesCards += `
         <div class="card">
-          <a href="./pages/details.html?id=${mov.imdbID}" class="btn"><img class="card-img-top" src="${mov.Poster}" alt="${mov.Title}" /></a>
+          <a href="./details.html?id=${mov.imdbID}" class="btn"><img class="card-img-top" src="${mov.Poster}" alt="${mov.Title}" /></a>
 
           <div class="card-body">
             <h5 class="card-title">${mov.Title}</h5>
