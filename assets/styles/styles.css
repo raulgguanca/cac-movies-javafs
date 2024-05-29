@@ -341,6 +341,35 @@ textarea {
   text-decoration: none;
 }
 
+/*user page*/
+.user-info {
+  display: flex;
+}
+
+.user-name {
+  margin: 7rem 0 0 2rem;
+  color: white;
+}
+
+.user-name p {
+  font-weight: bolder;
+  font-size: x-large;
+  margin: 0;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem 0 0 2rem;
+}
+
+.user-wellcome {
+  text-align: center;
+  margin-top: 2rem;
+  color: orange;
+}
+
 /* media queries */
 @media screen and (max-width:1000px) {
   header {
